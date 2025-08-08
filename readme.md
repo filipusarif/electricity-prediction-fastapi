@@ -35,47 +35,6 @@ git clone https://github.com/your-username/electricity-japan-fastapi.git
 cd electricity-japan-fastapi
 ```
 
-Here is the **full markdown README.md** file in English, tailored for your FastAPI project:
-
----
-
-````markdown
-# 🇯🇵 Japan Electricity Consumption API 🔌
-
-A **FastAPI-based REST API** for predicting electricity consumption in Japan’s **residential** and **industrial** sectors. This API also provides simple yet effective **visualization endpoints** for forecast and price sensitivity.
-
----
-
-## 🚀 Features
-
-- 🔮 Predict electricity consumption for:
-  - Residential sector
-  - Industrial sector
-- 📈 Visualize 10-year forecast (residential)
-- 💸 Visualize consumption sensitivity to real price changes (residential)
-- 🖼️ Return plots as **base64-encoded images** (easy integration with frontend)
-
----
-
-## 🧠 Models
-
-The API loads two pre-trained machine learning models saved as pipelines:
-
-- `./models/pipeline_res.pkl` — Residential electricity consumption predictor
-- `./models/pipeline_ind.pkl` — Industrial electricity consumption predictor
-
-These models were trained on historical electricity data from Japan (1990–2015).
-
----
-
-## 🛠️ Installation
-
-### 1. Clone this repository
-
-```bash
-git clone https://github.com/your-username/electricity-japan-fastapi.git
-cd electricity-japan-fastapi
-````
 
 ### 2. Create a virtual environment and activate it
 
