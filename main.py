@@ -53,9 +53,9 @@ def forecast_residential_base64(data: InputData):
 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.plot(years, predictions, marker='o')
-    ax.set_title("Prediksi 10 Tahun Konsumsi Residential")
-    ax.set_xlabel("Tahun")
-    ax.set_ylabel("Konsumsi (KWh)")
+    ax.set_title("10-Year Forecast of Residential Consumption")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Consumption (KWh)")
     plt.tight_layout()
 
     # Save to buffer and encode
@@ -81,9 +81,9 @@ def forecast_industrial_base64(data: InputData):
 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.plot(years, predictions, marker='o')
-    ax.set_title("Prediksi 10 Tahun Konsumsi Industrial")
-    ax.set_xlabel("Tahun")
-    ax.set_ylabel("Konsumsi (KWh)")
+    ax.set_title("10-Year Forecast of Industrial Consumption")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Consumption (KWh)")
     plt.tight_layout()
 
     # Save to buffer and encode
@@ -109,9 +109,9 @@ def price_sensitivity_residential_base64(data: InputData):
 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.plot(harga_range, predictions, marker='s', color='green')
-    ax.set_title("Sensitivitas Terhadap Harga Riil (Residential)")
+    ax.set_title("Sensitivity to Real Prices (Residential)")
     ax.set_xlabel("Real Price")
-    ax.set_ylabel("Konsumsi (KWh)")
+    ax.set_ylabel("Consumption (KWh)")
     plt.tight_layout()
 
     buf = io.BytesIO()
@@ -136,9 +136,9 @@ def price_sensitivity_industrial_base64(data: InputData):
 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.plot(harga_range, predictions, marker='s', color='green')
-    ax.set_title("Sensitivitas Terhadap Harga Riil (Industrial)")
+    ax.set_title("Sensitivity to Real Prices (Industrial)")
     ax.set_xlabel("Real Price")
-    ax.set_ylabel("Konsumsi (KWh)")
+    ax.set_ylabel("Consumption (KWh)")
     plt.tight_layout()
 
     buf = io.BytesIO()
